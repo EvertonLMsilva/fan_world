@@ -7,7 +7,7 @@ import Dashboard from "./view/Dashboard";
 function App() {
   return (
     <div className="root">
-      <Login />
+      <Dashboard />
     </div>
   )
 }
