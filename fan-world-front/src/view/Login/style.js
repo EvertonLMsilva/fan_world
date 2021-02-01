@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "30px",
         backgroundColor: '#2699FB',
         border: "0 !important",
-        cursor: "pointer",
+         cursor: "pointer",
         '& .MuiOutlinedInput-root': {
             '& fieldset': {
                 borderWidth: "3px",
@@ -122,6 +122,9 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "1.5rem",
         fontWeight: 600,
         fontFamily: "Roboto, San Francisco, Segoe UI"
+    },
+    imputIcon:{
+        color: "#2699FB",
     }
 
 }));

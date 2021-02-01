@@ -39,7 +39,7 @@ export default function Login() {
 
                                         className={clsx(classes.margin, classes.textField)}
                                         InputProps={{
-                                            startAdornment: <InputAdornment position="start"><AccountCircle /></InputAdornment>,
+                                            startAdornment: <InputAdornment position="start"><AccountCircle className={classes.imputIcon}/></InputAdornment>,
                                         }}
 
                                         variant="outlined"
@@ -54,7 +54,7 @@ export default function Login() {
                                         InputProps={{
                                             startAdornment:
                                                 <InputAdornment position="start" onClick={handleClickShowPassword}>
-                                                    {values.showPassword ? <Visibility /> : <VisibilityOff />}
+                                                    {values.showPassword ? <Visibility className={classes.imputIcon}/> : <VisibilityOff className={classes.imputIcon}/>}
                                                 </InputAdornment>,
                                             borderRadius: "15px"
                                         }}
@@ -65,7 +65,7 @@ export default function Login() {
                             </Grid>
                             <Grid container spacing={1} direction="row" justify="space-between" alignItems="center"
                                 className={clsx(classes.marginButtonAuxiBot, classes.settingButton)} >
-                                <Grid item xs={1}>
+                                <Grid item xs={1} >
                                     <Icon>send</Icon>
                                 </Grid>
                                 <Grid item xs={10} className={classes.buttonSend}>
