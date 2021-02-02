@@ -1,9 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        color: "#ccc"
+    cover: {
+        width: 151,
     },
-}))
+    contentCenter:{
 
-export default useStyles
+    }
+}));
+export default useStyles;

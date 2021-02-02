@@ -1,13 +1,15 @@
 import React from 'react'
+import { Grid } from '@material-ui/core';
 
-// Import componentes
-import TopBar from "../../components/TopBar"
-
+// estilo css
+import style from "./style"
 
 export default function Dashboard() {
+    const classes = style();
+
     return (
-        <div>
-            <TopBar />
-        </div>
-    );
+            <Grid item className={classes.contentCenter} >
+                Olá
+            </Grid>
+    )
 };

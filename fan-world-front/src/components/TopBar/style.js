@@ -16,9 +16,12 @@ const useStyles = makeStyles(theme => ({
   },
   iconSetting: {
     fontSize: "35px",
+    cursor: "pointer"
   },
   inputSearch: {
-    width: "110px"
+    width: "110px",
+    cursor: "pointer"
+
   },
   [theme.breakpoints.up('md')]: {
     imgLogo: {
