@@ -17,12 +17,12 @@ export default function TopBar() {
             {/* Icone de pesquisa */}
             <Grid item xs={4}>
                 <Grid container direction="row" justify="flex-start" alignItems="center">
-                    <Grid item  onClick={() => setOpenSearch(!openSearch)}>
+                    <Grid item onClick={() => setOpenSearch(!openSearch)}>
                         <SearchIcon className={classes.iconSetting} />
                     </Grid>
-                    {openSearch 
-                    ? <Grid item > <InputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} className={classes.inputSearch}/> </Grid> 
-                    : ""
+                    {openSearch
+                        ? <Grid item > <InputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} className={classes.inputSearch} /> </Grid>
+                        : ""
                     }
                 </Grid>
             </Grid>
@@ -35,9 +35,7 @@ export default function TopBar() {
                     </Grid>
                     {/* Imagem logo */}
                     <Grid item >
-                        <Grid item>
-                            <img alt="logo" src={logo_white} className={classes.imgLogo} />
-                        </Grid>
+                        <img alt="logo" src={logo_white} className={classes.imgLogo} />
                     </Grid>
                     {/* Icone de mensagens */}
                     <Grid item >
